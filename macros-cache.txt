@@ -1,0 +1,470 @@
+VER 3 0000000000000146 "!!BLOODLUST" "132091"
+/i BLOODLUST!
+/i BLOODLUST!
+/i BLOODLUST!
+END
+VER 3 00000000000000B7 "!BARB" "INV_MISC_QUESTIONMARK"
+#showtooltip Barbed Shot
+/use [@mouseover,exists,harm,nodead][]Barbed Shot
+END
+VER 3 0000000000000144 "!BlackKill" "134400"
+#showtooltip Black Arrow
+/cast Black Arrow
+/cast Kill Shot
+END
+VER 3 0000000000000145 "!BloodshedTrink" "134400"
+#showtooltip Bloodshed
+/cast Bloodshed
+/use 14
+/use 13
+END
+VER 3 0000000000000116 "!BW-2nd" "INV_MISC_QUESTIONMARK"
+#showtooltip bestial wrath
+/cast bestial wrath
+/cast kill command
+/cast Claw(Basic Attack)
+/cast Bite(Basic Attack)
+/cast Smack(Basic Attack)
+/petattack
+/cast dash
+/use 14
+END
+VER 3 00000000000000A2 "!BWBothTrink" "INV_MISC_QUESTIONMARK"
+#showtooltip bestial wrath
+/cast bestial wrath
+/cast kill command
+/cast Claw(Basic Attack)
+/cast Bite(Basic Attack)
+/cast Smack(Basic Attack)
+/petattack
+/cast dash
+/use 13
+/use 14
+END
+VER 3 00000000000000FB "!BWNOTrink" "INV_MISC_QUESTIONMARK"
+#showtooltip bestial wrath
+/cast bestial wrath
+/cast kill command
+/cast Claw(Basic Attack)
+/cast Bite(Basic Attack)
+/cast Smack(Basic Attack)
+/petattack
+/cast dash
+END
+VER 3 000000000000012F "!CallTrink" "134400"
+#showtooltip call of the wild
+/cast call of the wild
+/use 14
+/use 13
+END
+VER 3 00000000000000B9 "!CobraAttack" "INV_MISC_QUESTIONMARK"
+#showtooltip Cobra Shot
+/cast Claw(Basic Attack)
+/cast Bite(Basic Attack)
+/cast Smack(Basic Attack)
+/petattack
+/cast dash
+/cast cobra shot
+END
+VER 3 00000000000000AF "!CobraMD" "INV_MISC_QUESTIONMARK"
+#showtooltip Cobra Shot
+/cast [target=focus, help] Misdirection; [target=pet, exists] Misdirection; Misdirection
+/cast cobra shot
+END
+VER 3 00000000000000A8 "!DE" "INV_MISC_QUESTIONMARK"
+#showtooltip Disengage
+/stopcasting
+/stopcasting
+/cast Disengage
+END
+VER 3 0000000000000104 "!Exhilaration" "INV_MISC_QUESTIONMARK"
+#showtooltip Exhilaration
+/stopcasting
+/stopcasting
+/cast Exhilaration
+END
+VER 3 000000000000003A "!Extra Action" "132304"
+/click ExtraActionButton1
+END
+VER 3 0000000000000103 "!FDead" "INV_MISC_QUESTIONMARK"
+#showtooltip Feign Death
+/stopcasting
+/cast Feign Death
+/cast Play Dead
+END
+VER 3 00000000000000AD "!HealAll" "INV_MISC_QUESTIONMARK"
+#showtooltip Mend Pet
+/cast mend pet
+/cast [@player] Spirit Mend
+/cast revive pet
+END
+VER 3 00000000000000A4 "!KCAttackDashUse" "INV_MISC_QUESTIONMARK"
+#showtooltip kill command
+/cast Claw(Basic Attack)
+/cast Bite(Basic Attack)
+/cast Smack(Basic Attack)
+/petattack
+/cast kill command
+/cast dash
+END
+VER 3 000000000000011C "!KCAzor" "134400"
+#showtooltip Kill Command
+/petassist
+/petattack
+/cast [pet] Kill Command; Call Pet 1
+/use [@pettarget]Claw
+/use [@pettarget]Bite
+/use [@pettarget]Smack
+END
+VER 3 00000000000000F7 "!KICK" "INV_MISC_QUESTIONMARK"
+#showtooltip Counter Shot
+/stopcasting
+/dismount
+/cast [@mouseover,nodead,harm][nodead,harm] Counter Shot
+END
+VER 3 00000000000000ED "!KILLMouseover" "INV_MISC_QUESTIONMARK"
+#showtooltip Kill Shot
+/stopcasting
+/cast [@mouseover,exists,harm,nodead] Kill Shot; Kill Shot
+END
+VER 3 00000000000000A7 "!LUST" "132344"
+/cast Primal Rage
+/cast Ancient Hysteria
+/cast Netherwinds
+/use drums of fury
+END
+VER 3 0000000000000125 "!MDTaivan" "134400"
+#showtooltip misdirection
+/cast [target=focus, help] Misdirection; [target=pet, exists] Misdirection; Misdirection
+/use taivan's trumpet
+END
+VER 3 00000000000000AA "!MisdirectFocus" "INV_MISC_QUESTIONMARK"
+#showtooltip misdirection
+/cast [target=focus, help] Misdirection; [target=pet, exists] Misdirection; Misdirection
+END
+VER 3 00000000000000C6 "!MSMisdirect" "INV_MISC_QUESTIONMARK"
+#showtooltip multi-shot
+/cast [target=focus, help] Misdirection; [target=pet, exists] Misdirection; Misdirection
+/cast multi-shot
+END
+VER 3 000000000000011D "!MSPetAttack" "134400"
+#showtooltip Multi-Shot
+/petassist
+/petattack
+/use Multi-Shot
+END
+VER 3 00000000000000D7 "!PetGrowl2" "999949"
+#showtooltip Taunt
+/cast Growl
+/run local i,g=1,0 while GetSpellName(i,“pet”) do if GetSpellName(i,“pet”)==“Growl” then g=i end i=i+1 end local _,y = GetSpellAutocast(g,“pet”) if not y then ToggleSpellAutocast(g,“pet”) end
+END
+VER 3 00000000000000A9 "!PetToggleGrowl" "INV_MISC_QUESTIONMARK"
+#showtooltip growl
+/petautocasttoggle Growl
+END
+VER 3 00000000000000F9 "!POTTRINK" "134795"
+#showtooltip potion of spectral agility
+/use item:191914
+/use item:191913
+/use item:191907
+/use item:191906
+/use item:191383
+/use item:191382
+/use item:191389
+/use item:191388
+/use 13
+/use 14
+END
+VER 3 0000000000000136 "!Put ExplozyTrap" "135826"
+#showtooltip high explosive trap
+/cast [@cursor] high explosive trap
+END
+VER 3 00000000000000EC "!PutBind" "INV_MISC_QUESTIONMARK"
+#showtooltip binding shot
+/cast [@cursor] Binding Shot
+END
+VER 3 00000000000000EA "!PutFlare" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor] Flare
+END
+VER 3 00000000000000E8 "!PutFreezeTrap" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor] Freezing Trap
+END
+VER 3 0000000000000137 "!PutImplosive" "1044088"
+#showtooltip implosive trap
+/cast [@cursor] implosive trap
+END
+VER 3 00000000000000E9 "!PutTarTrap" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor] Tar Trap
+END
+VER 3 00000000000000E7 "!RapidTrinket" "INV_MISC_QUESTIONMARK"
+#showtooltip rapid fire
+/stopcasting
+/cast rapid fire
+END
+VER 3 00000000000000E0 "!ResArrowHere" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor] resonating arrow
+/use 13
+/use 14
+END
+VER 3 00000000000000BB "!Spirit Mend" "INV_MISC_QUESTIONMARK"
+#showtooltip Spirit Mend
+/cast [@playertarget, exists, help][@player] spirit mend
+END
+VER 3 0000000000000099 "!STOP!" "294471"
+/stopcasting
+/stopattack
+/petpassive
+END
+VER 3 00000000000000BC "!STUN!" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petpassive
+/petattack
+/use Intimidation
+END
+VER 3 00000000000000F8 "!STUNMouseOver" "INV_MISC_QUESTIONMARK"
+#showtooltip Intimidation
+/petpassive
+/cast [@mouseover,nodead,harm][nodead,harm] Intimidation
+END
+VER 3 000000000000012C "!Tarhere" "134400"
+#showtooltip
+/cast [@player] Tar Trap
+END
+VER 3 0000000000000105 "!Tranq!" "INV_MISC_QUESTIONMARK"
+#showtooltip Tranquilizing Shot
+/stopcasting
+/cast [@mouseover,nodead,harm][nodead,harm] Tranquilizing Shot
+END
+VER 3 000000000000012B "!Traphere" "134400"
+#showtooltip
+/cast [@player] Freezing Trap
+END
+VER 3 00000000000000C5 "!Trinkets" "INV_MISC_QUESTIONMARK"
+/use 13
+/use 14
+END
+VER 3 00000000000000AB "!TurtleOff" "INV_MISC_QUESTIONMARK"
+#showtooltip Aspect of the Turtle
+/cancelaura Aspect of the Turtle
+END
+VER 3 00000000000000EE "!VOLLEY" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor] Volley
+END
+VER 3 00000000000000E5 "!WildSpirits" "INV_MISC_QUESTIONMARK"
+#showtooltip wild spirits
+/cast aspect of the wild
+/cast [@cursor] wild spirits
+/use 14
+END
+VER 3 0000000000000139 "11PrePGuild1" "979574"
+/gu Prepatch event reminder! Requires Warbank quest done on any toon. From (Legion) Dalaran Chamber of the Guardian, daily, once per account, quest for current zone is right outside the portal in the zone when you enter. 
+END
+VER 3 000000000000013A "11PrePGuild2" "3615519"
+/gu Enter zone, grab the zone quest, do each phase until the boss spawns, kill the boss, turn in quest, you're done. :) You can do it again for 1400 Memories if you want, ad infinitum. Each of 3 zones has a different *daily* quest.
+END
+VER 3 00000000000000BD "@AutoSpiritHeal" "1769068"
+/petautocasttoggle Spirit Mend
+END
+VER 3 00000000000000C8 "@GROWL" "INV_MISC_QUESTIONMARK"
+#showtooltip growl
+/cast growl
+END
+VER 3 0000000000000107 "@ME" "INV_MISC_QUESTIONMARK"
+#showtooltip mote of light
+/use mote of light
+/use personal spotlight
+/use world shrinker
+END
+VER 3 0000000000000106 "@MS EXP" "INV_MISC_QUESTIONMARK"
+#showtooltip multi-shot
+/stopcasting
+/cast [@mouseover,nodead,harm][nodead,harm] multi-shot
+END
+VER 3 00000000000000D9 "@PetAssist" "132135"
+/petassist
+END
+VER 3 00000000000000C4 "@Pulltimer" "132208"
+/pull 14
+END
+VER 3 00000000000000F3 "@SSAttack" "132213"
+#showtooltip steady shot
+/cast Claw(Basic Attack)
+/cast Bite(Basic Attack)
+/cast Smack(Basic Attack)
+/petattack
+/cast dash
+/cast steady shot
+END
+VER 3 0000000000000010 "AB intro" "Spell_Shadow_SacrificialShield"
+/bg Alright, who's running this show?  Tell me where to go, I will go there.  Tell me what to attack, I will!  Tell me where to defend, I will hold it till my death.  Just someone step up and lead this rabble!
+END
+VER 3 000000000000012D "AutoPotion" "INV_Misc_QuestionMark"
+#showtooltip
+END
+VER 3 000000000000013C "BarrageMD" "134400"
+#showtooltip Barrage
+/cast [target=focus, help] Misdirection; [target=pet, exists] Misdirection; Misdirection
+/cast barrage
+END
+VER 3 0000000000000038 "CameraDistance" "ABILITY_HUNTER_EAGLEEYE"
+/console SET cameraDistanceMaxFactor "10"
+END
+VER 3 00000000000000FA "CancelHOTS" "135866"
+/cancelaura Regrowth
+/cancelaura Rejuvenation
+/cancelaura Lifebloom
+/cancelaura Cenarion Ward
+/cancelaura Wild Growth
+/cancelaura Tranquility
+/cancelaura Spring Blossoms
+END
+VER 3 0000000000000134 "CancelPullTimer" "2203913"
+/pull 0
+END
+VER 3 000000000000013B "ClearAllQuests" "134400"
+/run for i=1,C_QuestLog.GetNumQuestLogEntries() do C_QuestLog.SetSelectedQuest(C_QuestLog.GetInfo(i).questID); C_QuestLog.SetAbandonQuest(); C_QuestLog.AbandonQuest() end;  
+END
+VER 3 000000000000011F "CompleteQuest" "134400"
+/run print(C_QuestLog.IsQuestFlaggedCompleted(64599))
+/run print(C_QuestLog.IsQuestFlaggedCompleted(65782))
+END
+VER 3 0000000000000127 "CompStomp" "134400"
+/i Take points, move forward, bottle them up at their spawnpoint/gate. Only need 1 at Stables, and 1 to hold it against stealthers.  2 each to Lumber Mine, 3 to Blacksmith. The rest-Farm them at Farm! And move to Farm as soon as secure.
+END
+VER 3 0000000000000012 "Criticism" "Ability_Hunter_Resourcefulness"
+/ra Suggestion for dealing with criticism: If you did your job, let the criticism pass through you.  In one ear and out the other.  If you did not do your job, take the criticism to heart, do better next time.  Either way, there is no need to reply.
+END
+VER 3 000000000000001D "Dismount" "Ability_Mount_KotoBrewfest"
+if UnitExists("veh?icle") then VehicleExit() end
+END
+VER 3 000000000000007E "ExitVehicle" "252268"
+/script VehicleExit();
+END
+VER 3 0000000000000143 "ExtraLootarang" "132147"
+/click ExtraActionButton1
+/use loot-a-rang
+END
+VER 3 0000000000000141 "FEED" "1412204"
+/target ulgrax
+/click ExtraActionButton1
+END
+VER 3 0000000000000142 "FEEDFocus" "519384"
+/target [@focus]
+/click ExtraActionButton1
+END
+VER 3 000000000000014A "G99Mount" "1126432"
+/cast g-99 breakneck;
+/run C_MountJournal.SummonByID(0)
+END
+VER 3 0000000000000121 "GRM_Roster" "inv_bannerpvp_02"
+/run GuildFrame_Toggle()
+/run GuildFrame_TabClicked ( GuildFrameTab2 )
+END
+VER 3 0000000000000124 "GRM_Tool" "INV_MISC_QUESTIONMARK"
+END
+VER 3 000000000000013E "Hello Friends" "413580"
+/i Hello friends.  Shall we kill some bad guys and take their stuff?
+END
+VER 3 0000000000000149 "Hybrid" "134291"
+/loadoutname Hybrid
+END
+VER 3 000000000000012A "INV!" "134149"
+/rt inv
+/rt invlist 1
+END
+VER 3 000000000000012E "KILL ADDS" "457329"
+/rw KILL ADDS!
+END
+VER 3 000000000000013F "LeaveInstance" "132151"
+/run LeaveBattlefield()
+END
+VER 3 000000000000008D "LFR" "INV_MISC_QUESTIONMARK"
+/i Funny thing about LFR. Many think everyone else in LFR is an idiot. But many say don't bother with mechanics because "it's just LFR"-Pick 1. If you think everyone's an idiot, make sure *you* do the mechanics so we succeed despite idiocy.
+END
+VER 3 00000000000000B3 "LUA Errors" "INV_MISC_QUESTIONMARK"
+/console scriptErrors 0
+/console scriptErrors 1
+END
+VER 3 000000000000004E "N00bLFRLFR1" "134230"
+/i Hello! Please note that this is a semi-organized LFR for our guild. We use it to introduce people to raiding and get them used to the fights. So please be patient before fights to explain. It shouldn't take long, but a slight delay. Thanks!
+END
+VER 3 000000000000003F "N00bRaidExplanat" "INV_PET_BATTLEPETTRAINING"
+/i Those not in our guild, please note this is our weekly LFR to introduce some guildies to raiding.  Please be patient as we take time to explain the fights to some in our guild.
+END
+VER 3 000000000000004F "N00bRaidRules" "133695"
+/ra N00b raid rules: Don't discuss performance (especially meters). Even about yourself. Chat&voice is R-rated but not explicitly biological or discriminatory. No drama, no pressure, no guilt, no politics, no religion, no controvesy. Consumables OPTIONAL
+END
+VER 3 0000000000000148 "PLUS" "135769"
+/loadoutname Plus
+END
+VER 3 0000000000000129 "PotBot" "INV_MISC_QUESTIONMARK"
+#showtooltip
+END
+VER 3 00000000000000C9 "PRAISE!" "2394723"
+/target focus
+/praise
+END
+VER 3 0000000000000140 "Profession Gear" "2437249"
+/gu Remember to use the Crafting Orders system to help your guild mates make Profession Gear for you. I have submitted 4 Guild Orders for Profession Equipment.  My cash should cover the materials.
+END
+VER 3 0000000000000131 "PUREAOE" "236221"
+/loadoutname PureAOES4
+END
+VER 3 0000000000000057 "PvP Arena" "INV_FIREARM_2H_RIFLE_DRAENORCRAFTED_D_01_A_ALLIANCE.BLP"
+/s What you kill, I kill.
+/s o que você matar, eu vou matar
+END
+VER 3 000000000000011B "RaidAOE" "1376043"
+/loadoutname RaidAOE
+END
+VER 3 000000000000013D "Rarescanner Togg" "136171"
+/rs ta
+END
+VER 3 0000000000000091 "RELEASE" "237542"
+/run RepopMe()
+END
+VER 3 000000000000002B "Rested" "ACHIEVEMENT_GUILDPERK_QUICK AND DEAD"
+/script p="player";x=UnitXP(p);m=UnitXPMax(p);r=GetXPExhaustion();if -1==(r or -1)then t="No rest."else t="Rest: "..(math.floor(20*r/m+0.5)).." bubbles ("if r+x<m then t=t..r else t=t.."level +"..(r+x-m)end t=t.."XP)"end;DEFAULT_CHAT_FRAME:AddMessage(t)
+END
+VER 3 000000000000010B "SCoordAssault" "134400"
+#showtooltip Coordinated Assault
+/cast Coordinated Assault
+/cast wild spirits
+/cast Raptor Strike
+/cast Claw(Basic Attack)
+/cast Bite(Basic Attack)
+/cast Smack(Basic Attack)
+/petattack
+/cast dash
+/use 13
+/use 14
+END
+VER 3 0000000000000074 "Skada" "SPELL_SHADOW_PAINSPIKE"
+/details toggle
+END
+VER 3 0000000000000123 "SOLO" "1033494"
+/loadoutname SOLO
+END
+VER 3 000000000000011A "ST" "1412205"
+/loadoutname ST
+END
+VER 3 0000000000000138 "ST2" "132157"
+/loadoutname ST11-2
+END
+VER 3 0000000000000147 "ZINV" "236440"
+/rt inv
+/rt invlist 1
+END
+VER 3 00000000000000D3 "ZSPEED" "538536"
+/script base = BASE_MOVEMENT_SPEED
+/script cur, run, fly, swim = GetUnitSpeed("player")
+/script ChatFrame1:AddMessage(string.format("Your current maximal speeds are: running %g%%, flying %g%%, swimming %g%%.", run/base*100, fly/base*100, swim/base*100))
+END
+VER 3 00000000000000CF "ZStaats" "INV_MISC_QUESTIONMARK"
+/gu I remember what I read in John Staats' book, The WoW Diaries.  He worked on WoW for 10 years, from 2yrs before launch.  TL:DR: If I wasn't in the room where it happened, I *cannot* know why a decision was made. Too many factors others cannot know.
+END
